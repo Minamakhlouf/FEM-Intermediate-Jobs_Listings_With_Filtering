@@ -1,0 +1,71 @@
+.filter-bar {
+    background-color: white;
+    display: flex; 
+    padding: 20px 24px 20px 20px; 
+    margin: 0 24px; 
+    border-radius: 10px; 
+    gap: 16px; 
+    align-items: center;
+    transform: translateY(-36px);
+    box-shadow: 3px 8px 25px 0 hsla(180, 29%, 50%, .7); 
+    width: 100%; 
+}
+
+.filter-bar__tags {
+    display: flex; 
+    gap: 16px; 
+    flex-wrap: wrap; 
+}
+
+.filter-bar__tag {
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden; 
+}
+
+.filter-bar__tag-name {
+    padding: 4px 8px; 
+    color: hsl(180, 29%, 50%); 
+    background-color: hsl(180, 52%, 96%);
+    font-weight: 700; 
+    line-height: 1.6;
+    font-size: 16px; 
+    display: block; 
+}
+
+.filter-bar__delete {
+    color: white; 
+    background-color: hsl(180, 29%, 50%); ;
+    display: flex;
+    align-items: center;
+    font-size: 16px; 
+    padding: 9px; 
+    font-weight: 700; 
+    cursor: pointer; 
+    transition: all 0.2s ease-in-out; 
+}
+
+.filter-bar__delete:hover {
+    background-color: black;
+}
+
+.filter-bar__clear {
+    color: #7c8f8f; 
+    font-size: 16px; 
+    font-weight: 700;
+    line-height: 1.6; 
+    margin-left: auto; 
+    cursor: pointer; 
+    transition: all 0.2s ease-in; 
+}
+
+.filter-bar__clear:hover {
+    color: hsl(180, 29%, 50%); 
+}
+
+@media screen and (min-width: 990px) {
+    .filter-bar {
+        max-width: 1110px; 
+        padding: 20px 40px; 
+    }
+}
